@@ -19,14 +19,13 @@ export default function AboutPage() {
                         <div>
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse shadow-[0_0_10px_#10B981]"></span>
-                                <span className="font-mono text-[10px] tracking-[0.4em] text-primary font-bold">Personnel Dossier // Director of Operations</span>
+                                <span className="font-mono text-[10px] tracking-[0.4em] text-primary font-bold">Director of Operations</span>
                             </div>
                             <h1 className="text-6xl md:text-8xl font-bold text-white tracking-tighter font-stint leading-tight">
                                 Introduction<span className="text-primary">.</span>
                             </h1>
                         </div>
                         <div className="flex flex-col items-start md:items-end gap-2 text-right">
-                            <span className="font-mono text-[10px] text-white/20 tracking-[0.3em]">Location Protocol</span>
                             <div className="flex items-center gap-2 text-white/60 font-medium">
                                 <MapPin size={14} className="text-primary" />
                                 <span>Dhaka // Global</span>
@@ -77,7 +76,7 @@ export default function AboutPage() {
                         </section>
 
                         <section className="p-8 rounded-3xl border border-white/10 bg-secondary/20 backdrop-blur-sm">
-                            <h3 className="font-stint text-base font-bold text-white/30 mb-6 tracking-[0.2em]">Deployment Metrics</h3>
+                            <h3 className="font-stint text-base font-bold text-white/30 mb-6 tracking-[0.2em]">Core Stats</h3>
                             <div className="space-y-4 font-mono text-[10px] text-white/50 tracking-widest">
                                 <div className="flex justify-between"><span>Regions:</span> <span className="text-white">4</span></div>
                                 <div className="flex justify-between"><span>Scalability:</span> <span className="text-primary">Enterprise</span></div>

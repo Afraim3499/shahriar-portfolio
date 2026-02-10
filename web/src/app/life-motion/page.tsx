@@ -49,7 +49,6 @@ export default function TravelsPage() {
                     <div className="max-w-4xl">
                         <div className="flex items-center gap-3 mb-10">
                             <div className="h-[1px] w-12 bg-primary/40" />
-                            <span className="font-sans text-[10px] font-medium tracking-[0.4em] text-primary">Chapter // Observations</span>
                         </div>
 
                         <h1 className="text-7xl md:text-9xl mb-12 tracking-tighter font-bold text-white relative leading-[0.8] font-stint">
@@ -68,8 +67,6 @@ export default function TravelsPage() {
                                 Over time, travel has become less about destinations and more about perspective. It has taught me how culture shapes behavior, how environments influence decisions, and why leadership looks different in different contexts.
                             </p>
                             <div className="pt-6">
-                                <span className="font-sans text-[9px] tracking-[0.5em] text-white/20 block mb-2">Chronicle Archive</span>
-                                <span className="font-mono text-[10px] text-white/10 tracking-widest">Global Sequence // 2024</span>
                             </div>
                         </div>
                     </div>
@@ -87,7 +84,6 @@ export default function TravelsPage() {
                         <div className="flex items-center justify-between mb-12">
                             <div className="flex flex-col items-center text-center">
                                 <h2 className="text-4xl md:text-5xl text-gradient tracking-tight font-stint mb-4 pb-2">Latest Visuals</h2>
-                                <p className="font-mono text-[9px] text-white/20 tracking-widest">[ SHORTS // 1080×1920 ]</p>
                             </div>
                         </div>
                         <VideoTriptych
@@ -103,11 +99,9 @@ export default function TravelsPage() {
             {/* VISUAL LOGS SECTION (Cinematic Video Wall) */}
             <section className="relative z-10 py-20 bg-black/20">
                 <div className="max-w-7xl mx-auto px-6 mb-12 flex flex-col items-center text-center">
-                    <span className="font-mono text-[9px] tracking-[0.5em] text-white/20 mb-2">Visual Archive</span>
                     <h2 className="text-4xl md:text-5xl text-gradient tracking-tight font-stint mb-4 pb-2">Captured Moments</h2>
                     <div className="flex items-center gap-3">
                         <span className="w-1.5 h-1.5 rounded-full bg-red-500 shadow-[0_0_10px_rgba(239,68,68,0.5)] animate-pulse" />
-                        <span className="font-mono text-[9px] text-white/40 tracking-widest">Live Status // Streaming</span>
                     </div>
                 </div>
                 <div className="max-w-7xl mx-auto px-6">
@@ -163,7 +157,6 @@ export default function TravelsPage() {
                         </p>
                         <div className="flex flex-col items-center gap-4">
                             <div className="h-16 w-[1px] bg-gradient-to-b from-primary to-transparent" />
-                            <span className="font-mono text-[10px] text-white/20 tracking-[0.5em]">Archive End // More Ahead</span>
                         </div>
                     </div>
                 </div>

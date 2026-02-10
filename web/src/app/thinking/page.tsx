@@ -22,7 +22,6 @@ export default async function ThinkingPage() {
                 <div className="flex flex-col gap-6">
                     <div className="flex items-center gap-3">
                         <span className="w-8 h-[1px] bg-primary"></span>
-                        <span className="font-mono text-[10px] tracking-[0.4em] text-primary font-bold">Knowledge Bank // 2024</span>
                     </div>
                     <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-white leading-tight font-stint">
                         Insights<span className="text-primary">.</span>
@@ -97,7 +96,6 @@ export default async function ThinkingPage() {
                 {/* Bottom Visual Anchor */}
                 <div className="mt-32 flex flex-col items-center gap-8">
                     <DecisionMarker variant="diamond" className="opacity-20" />
-                    <span className="font-mono text-[9px] text-white/10 tracking-[0.5em]">End of knowledge bank // More syncing required</span>
                 </div>
             </main>
         </div>

@@ -93,7 +93,7 @@ export default function CareerPage() {
                 <div className="flex flex-col gap-6">
                     <div className="flex items-center gap-3">
                         <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse shadow-[0_0_10px_#10B981]"></span>
-                        <span className="font-mono text-[10px] tracking-[0.4em] text-primary font-bold">Personnel Archive // Career History</span>
+                        <span className="font-mono text-[10px] tracking-[0.4em] text-primary font-bold">Career History</span>
                     </div>
                     <h1 className="text-6xl md:text-8xl font-bold tracking-tighter text-white leading-[0.85] font-stint">
                         Professional <br /> Experience<span className="text-primary">.</span>
@@ -104,8 +104,8 @@ export default function CareerPage() {
                             A complete chronological record of deployments, strategic roles, and operational command across a decade of global systems architectural design.
                         </p>
                         <div className="font-mono text-[10px] text-white/30 flex flex-col gap-2 items-start md:items-end tracking-[0.2em]">
-                            <div className="flex gap-4"><span>Total_Exp:</span> <span className="text-white font-bold">10 Years</span></div>
-                            <div className="flex gap-4"><span>Status:</span> <span className="text-primary font-bold">Active_Duty</span></div>
+                            <div className="flex gap-4"><span>Experience:</span> <span className="text-white font-bold">10 Years</span></div>
+                            <div className="flex gap-4"><span>Status:</span> <span className="text-primary font-bold">Active</span></div>
                         </div>
                     </div>
                 </div>
@@ -125,7 +125,6 @@ export default function CareerPage() {
                                 {group.company}
                             </h2>
                             <div className="flex items-center gap-4">
-                                <span className="hidden md:block font-mono text-[9px] text-white/20 tracking-[0.4em]">Deployment Sequence</span>
                                 <ChevronsDown className="text-primary animate-bounce" size={20} />
                             </div>
                         </div>
@@ -159,8 +158,6 @@ export default function CareerPage() {
                 <div className="flex flex-col items-center gap-12 pt-12">
                     <DecisionMarker variant="diamond" className="opacity-40" />
                     <div className="text-center space-y-4">
-                        <h3 className="font-mono text-lg text-white/20 tracking-[0.6em]">End points of record</h3>
-                        <p className="text-primary font-mono text-[10px] tracking-widest">System standby // Ready for future deployments</p>
                     </div>
                 </div>
             </main>

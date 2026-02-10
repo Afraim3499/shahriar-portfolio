@@ -172,7 +172,7 @@ export function RegionExplorer() {
                                 {activeRegion.type === "gallery" && (
                                     <div className="w-full bg-white/[0.02] backdrop-blur-3xl p-12 border border-white/5 shadow-2xl rounded-[2.5rem] relative group overflow-hidden">
                                         <div className="absolute -inset-1 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
-                                        <h4 className="font-sans text-[10px] font-bold text-primary/60 mb-10 border-b border-white/5 pb-4 tracking-[0.4em] relative uppercase">Sequence Gallery</h4>
+                                        <div className="mb-10 border-b border-white/5 pb-4 relative" />
                                         <ul className="space-y-6 text-foreground/70 font-medium tracking-tight text-lg relative">
                                             {activeRegion.items.map((item: any, idx: number) => (
                                                 <motion.li
@@ -207,7 +207,6 @@ export function RegionExplorer() {
                                             ))}
                                         </div>
                                         <div className="mt-12 pt-8 border-t border-white/5 flex items-center justify-between">
-                                            <span className="font-mono text-[9px] text-white/10 tracking-[0.5em] uppercase">Architecture Observation</span>
                                             <div className="flex gap-2">
                                                 <div className="h-1 w-8 bg-primary/20 rounded-full" />
                                                 <div className="h-1 w-4 bg-primary/10 rounded-full" />

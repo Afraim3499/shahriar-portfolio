@@ -35,7 +35,7 @@ interface SpotlightCarouselProps {
 
 export function SpotlightCarousel({
     title = "Visual Chronicles",
-    subtitle = "Captured Moments // Global Sequence"
+    subtitle = ""
 }: SpotlightCarouselProps) {
     const [activeIndex, setActiveIndex] = useState(2); // Start with 3rd image in center
     const [isHovered, setIsHovered] = useState(false);
@@ -119,9 +119,6 @@ export function SpotlightCarousel({
                 <header className="mb-16 text-center">
                     <div className="flex items-center justify-center gap-3 mb-6">
                         <div className="h-[1px] w-12 bg-primary/40" />
-                        <span className="font-sans text-[10px] font-medium tracking-[0.4em] text-primary">
-                            Gallery // Exploration
-                        </span>
                         <div className="h-[1px] w-12 bg-primary/40" />
                     </div>
                     <h2 className="text-4xl md:text-5xl font-stint text-white mb-4">

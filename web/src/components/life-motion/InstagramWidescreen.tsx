@@ -75,21 +75,12 @@ export function InstagramWidescreen() {
             <header className="max-w-7xl mx-auto px-6 mb-20 text-center">
                 <div className="flex items-center justify-center gap-3 mb-6">
                     <div className="h-[1px] w-12 bg-primary/40" />
-                    <span className="font-sans text-[10px] font-medium tracking-[0.4em] text-primary uppercase">
-                        Social Feed // The Cinematic Archive
-                    </span>
                     <div className="h-[1px] w-12 bg-primary/40" />
                 </div>
                 <h2 className="text-4xl md:text-6xl font-stint text-white mb-6">
                     Widescreen Observations
                 </h2>
                 <div className="max-w-2xl mx-auto space-y-2">
-                    <p className="text-white/40 font-mono text-[9px] tracking-[0.4em] uppercase hidden md:block">
-                        Seamless Glide · Pixel-Perfect Loop · Click to Active Play
-                    </p>
-                    <p className="text-white/40 font-mono text-[9px] tracking-[0.4em] uppercase md:hidden px-8">
-                        Precision Masked Archive · Global Vertical Flow
-                    </p>
                 </div>
             </header>
 

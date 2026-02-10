@@ -60,7 +60,6 @@ export function FeaturedIn() {
                     >
                         <div className="flex items-center gap-3 mb-6">
                             <span className="w-8 h-[1px] bg-primary/40" />
-                            <span className="font-mono text-[10px] text-primary tracking-[0.4em] font-bold">Press Archive V2</span>
                             <span className="w-8 h-[1px] bg-primary/40" />
                         </div>
                         <h2 className="font-stint text-4xl md:text-5xl text-gradient tracking-tight leading-tight mb-6">
@@ -140,10 +139,6 @@ export function FeaturedIn() {
                 {/* Bottom Global Status */}
                 <div className="mt-16 flex items-center justify-center gap-6 opacity-20">
                     <div className="w-12 h-[1px] bg-white/20" />
-                    <div className="flex items-center gap-3">
-                        <Globe size={12} />
-                        <span className="font-mono text-[9px] tracking-[0.5em]">International Media Validated</span>
-                    </div>
                     <div className="w-12 h-[1px] bg-white/20" />
                 </div>
             </div>
