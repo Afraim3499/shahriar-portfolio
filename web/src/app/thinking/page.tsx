@@ -7,10 +7,10 @@ import { DecisionMarker } from "@/components/ui/DecisionMarker";
 
 export const metadata = {
     title: "Insights | Shahriar Kabir",
-    description: "Systems thinking, operational strategy, and the future of global teams.",
+    description: "Deep dives into systems thinking, operational strategy, AI orchestration, and the evolving future of globally distributed teams.",
     openGraph: {
         title: "Insights | Shahriar Kabir",
-        description: "Systems thinking, operational strategy, and the future of global teams.",
+        description: "Deep dives into systems thinking, operational strategy, AI orchestration, and the evolving future of globally distributed teams.",
         type: "website",
     }
 };

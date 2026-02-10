@@ -11,10 +11,10 @@ import Image from "next/image";
 
 export const metadata = {
     title: "Life & Motion | Shahriar Kabir",
-    description: "A forensic record of momentum and exploration through diverse global regions.",
+    description: "A forensic record of momentum, global exploration, and cultural navigation across diverse regions, from Dhaka to the world.",
     openGraph: {
         title: "Life & Motion | Shahriar Kabir",
-        description: "A forensic record of momentum and exploration through diverse global regions.",
+        description: "A forensic record of momentum, global exploration, and cultural navigation across diverse regions, from Dhaka to the world.",
         type: "website",
     }
 };

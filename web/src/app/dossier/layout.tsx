@@ -2,10 +2,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Dossier | Shahriar Kabir",
-    description: "Personal mission record, core focus areas, and strategic operational philosophy.",
+    description: "Explore the personal mission record, core focus areas, and strategic operational philosophy of Shahriar Kabir, Director of Operations & Process Architect.",
     openGraph: {
         title: "Dossier | Shahriar Kabir",
-        description: "Personal mission record, core focus areas, and strategic operational philosophy.",
+        description: "Explore the personal mission record, core focus areas, and strategic operational philosophy of Shahriar Kabir, Director of Operations & Process Architect.",
         type: "profile",
     }
 };
