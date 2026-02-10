@@ -8,6 +8,11 @@ import { DecisionMarker } from "@/components/ui/DecisionMarker";
 export const metadata = {
     title: "Insights | Shahriar Kabir",
     description: "Systems thinking, operational strategy, and the future of global teams.",
+    openGraph: {
+        title: "Insights | Shahriar Kabir",
+        description: "Systems thinking, operational strategy, and the future of global teams.",
+        type: "website",
+    }
 };
 
 export default async function ThinkingPage() {

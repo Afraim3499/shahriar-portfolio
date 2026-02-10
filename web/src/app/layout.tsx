@@ -54,8 +54,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Shahriar Kabir | Systems Architect",
     description: "Director of Operations at PrimeSync AI. Building global teams.",
+    site: "@shahriarhisham",
     creator: "@shahriarhisham",
     images: ["/og-image.jpg"]
+  },
+  appleWebApp: {
+    title: "Shahriar Kabir",
+    statusBarStyle: "default",
+    capable: true,
   },
   robots: {
     index: true,

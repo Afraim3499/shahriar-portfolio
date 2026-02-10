@@ -11,7 +11,12 @@ import Image from "next/image";
 
 export const metadata = {
     title: "Life & Motion | Shahriar Kabir",
-    description: "A forensic record of momentum and exploration.",
+    description: "A forensic record of momentum and exploration through diverse global regions.",
+    openGraph: {
+        title: "Life & Motion | Shahriar Kabir",
+        description: "A forensic record of momentum and exploration through diverse global regions.",
+        type: "website",
+    }
 };
 
 // Consolidated Video Data
