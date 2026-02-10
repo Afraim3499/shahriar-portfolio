@@ -257,7 +257,7 @@ export function HorizontalTimeline() {
                                 {/* Card */}
                                 <div
                                     className={cn(
-                                        "w-16 h-16 rounded-xl flex items-center justify-center",
+                                        "w-20 h-16 rounded-xl flex items-center justify-center",
                                         "bg-gradient-to-br from-primary to-accent shadow-lg",
                                         "border-2 border-white/20"
                                     )}
@@ -265,7 +265,7 @@ export function HorizontalTimeline() {
                                         boxShadow: '0 8px 20px -5px rgba(16, 185, 129, 0.3)'
                                     }}
                                 >
-                                    <span className="text-white font-bold text-xs drop-shadow-md">
+                                    <span className="text-white font-bold text-[10px] drop-shadow-md text-center leading-tight">
                                         {mission.year}
                                     </span>
                                 </div>

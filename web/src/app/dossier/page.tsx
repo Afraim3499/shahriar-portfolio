@@ -21,7 +21,7 @@ export default function AboutPage() {
                                 <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse shadow-[0_0_10px_#10B981]"></span>
                                 <span className="font-mono text-[10px] tracking-[0.4em] text-primary font-bold">Director of Operations</span>
                             </div>
-                            <h1 className="text-6xl md:text-8xl font-bold text-white tracking-tighter font-stint leading-tight">
+                            <h1 className="text-5xl md:text-8xl font-bold text-white tracking-tighter font-stint leading-[0.9]">
                                 Introduction<span className="text-primary">.</span>
                             </h1>
                         </div>
@@ -146,14 +146,14 @@ export default function AboutPage() {
                 <div className="absolute right-1/4 top-1/2 -translate-y-1/2 w-64 h-64 bg-accent/20 rounded-full blur-[100px] animate-pulse" style={{ animationDelay: '1s' }} />
 
                 {/* Content */}
-                <div className="relative z-10 w-full px-8 md:px-16 lg:px-24 flex items-center justify-center gap-8">
-                    <p className="text-lg md:text-xl lg:text-2xl text-white/80 font-stint whitespace-nowrap">
+                <div className="relative z-10 w-full px-8 md:px-16 lg:px-24 flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-8 md:gap-12">
+                    <p className="text-xl md:text-xl lg:text-3xl text-white/90 font-stint leading-tight">
                         Ready to discuss operations, AI, or partnerships?
                     </p>
                     <Link
                         href="https://calendar.app.google/EH9rYwo4E5u1HkjR6"
                         target="_blank"
-                        className="inline-flex items-center group px-8 py-4 bg-gradient-to-r from-primary to-accent text-white font-mono text-sm font-bold tracking-widest hover:scale-105 transition-all duration-300 rounded-full shadow-lg hover:shadow-[0_0_40px_rgba(16,185,129,0.5)]"
+                        className="inline-flex items-center justify-center group px-8 py-4 bg-gradient-to-r from-primary to-accent text-white font-mono text-xs md:text-sm font-bold tracking-widest hover:scale-105 transition-all duration-300 rounded-full shadow-lg hover:shadow-[0_0_40px_rgba(16,185,129,0.5)] w-full md:w-auto"
                     >
                         Initiate Conversation
                         <ArrowUpRight size={16} className="inline ml-3 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

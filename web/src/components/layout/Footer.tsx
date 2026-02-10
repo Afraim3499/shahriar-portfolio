@@ -10,7 +10,7 @@ export function Footer() {
         <footer className="w-full bg-[#030712] relative overflow-hidden pt-32 pb-12 px-6">
             {/* Massive Typographic Background Layer - Stacked Tower Variant */}
             <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none select-none overflow-hidden z-0">
-                <div className="font-stint text-[80px] sm:text-[15vw] md:text-[17vw] leading-[0.75] text-white/[0.03] uppercase tracking-tighter flex flex-col items-center">
+                <div className="font-stint text-[16vw] sm:text-[15vw] md:text-[17vw] leading-[0.85] text-white/[0.03] uppercase tracking-tighter flex flex-col items-center">
                     <span>SHAHRIAR</span>
                     <span>KABIR</span>
                 </div>

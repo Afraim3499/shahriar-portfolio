@@ -137,49 +137,52 @@ export function Navigation() {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="md:hidden bg-secondary overflow-hidden"
+                        initial={{ height: 0, opacity: 0, y: -20 }}
+                        animate={{ height: "auto", opacity: 1, y: 0 }}
+                        exit={{ height: 0, opacity: 0, y: -20 }}
+                        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                        className="fixed inset-x-3 top-[76px] z-50 md:hidden glass border border-white/10 rounded-2xl overflow-hidden shadow-2xl"
                     >
-                        <div className="flex flex-col border-t border-foreground/10">
-                            {links.map((link, i) => (
-                                <motion.div
-                                    key={link.href}
-                                    initial={{ x: -20, opacity: 0 }}
-                                    animate={{ x: 0, opacity: 1 }}
-                                    transition={{ delay: i * 0.05 }}
-                                >
-                                    <Link
-                                        href={link.href}
-                                        className={cn(
-                                            "block px-6 py-5 text-sm font-stint tracking-wide border-b border-foreground/10 relative group transition-colors duration-300",
-                                            (link.href === "/" ? pathname === "/" : pathname.startsWith(link.href)) ? "text-primary font-bold" : "text-foreground/70 hover:text-primary hover:bg-primary/5"
-                                        )}
-                                        onClick={() => setIsOpen(false)}
+                        <div className="flex flex-col">
+                            {links.map((link, i) => {
+                                const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+                                return (
+                                    <motion.div
+                                        key={link.href}
+                                        initial={{ x: -20, opacity: 0 }}
+                                        animate={{ x: 0, opacity: 1 }}
+                                        transition={{ delay: i * 0.1 }}
                                     >
-                                        <span className="flex items-center gap-3">
-                                            <span className={cn(
-                                                "w-1.5 h-1.5 rounded-full transition-all duration-300",
-                                                (link.href === "/" ? pathname === "/" : pathname.startsWith(link.href)) ? "bg-primary shadow-[0_0_8px_rgba(16,185,129,0.6)]" : "bg-foreground/20 group-hover:bg-primary"
-                                            )} />
-                                            {link.label}
-                                        </span>
-                                    </Link>
-                                </motion.div>
-                            ))}
+                                        <Link
+                                            href={link.href}
+                                            className={cn(
+                                                "block px-6 py-5 text-sm font-stint tracking-wide border-b border-white/5 relative group transition-colors duration-300",
+                                                isActive ? "text-primary font-bold bg-primary/5" : "text-foreground/70"
+                                            )}
+                                            onClick={() => setIsOpen(false)}
+                                        >
+                                            <span className="flex items-center gap-3">
+                                                <span className={cn(
+                                                    "w-1.5 h-1.5 rounded-full transition-all duration-300",
+                                                    isActive ? "bg-primary shadow-[0_0_8px_rgba(16,185,129,0.6)]" : "bg-foreground/20 group-hover:bg-primary"
+                                                )} />
+                                                {link.label}
+                                            </span>
+                                        </Link>
+                                    </motion.div>
+                                );
+                            })}
                             <motion.div
                                 initial={{ y: 20, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
-                                transition={{ delay: links.length * 0.05 }}
+                                transition={{ delay: links.length * 0.1 }}
                             >
                                 <Link
                                     href="https://calendar.app.google/EH9rYwo4E5u1HkjR6"
                                     target="_blank"
-                                    className="block px-6 py-8 text-sm font-stint bg-primary text-white font-bold text-center tracking-wide hover:bg-primary-light transition-colors"
+                                    className="block px-6 py-8 text-sm font-stint bg-primary/20 text-primary font-bold text-center tracking-widest hover:bg-primary hover:text-white transition-all underline underline-offset-8 decoration-primary/30 hover:shadow-[0_0_30px_rgba(16,185,129,0.2)]"
                                 >
-                                    Talk to Shahriar
+                                    BOOK A STRATEGIC SYNC
                                 </Link>
                             </motion.div>
                         </div>
