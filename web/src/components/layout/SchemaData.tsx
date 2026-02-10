@@ -31,6 +31,7 @@ export function SchemaData() {
             "name": "PrimeSync AI"
         },
         "description": "Systems Architect and Director of Operations based in Dhaka, specializing in building and operating global teams at scale.",
+        "image": "https://shahriar-kabir.com/images/shahriar-profile.jpg",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Dhaka",
@@ -42,8 +43,7 @@ export function SchemaData() {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "PrimeSync AI",
-        "url": "https://primesync.ai",
-        "logo": "https://shahriar-kabir.com/logo.png"
+        "url": "https://primesync.ai"
     };
 
     const websiteSchema = {
