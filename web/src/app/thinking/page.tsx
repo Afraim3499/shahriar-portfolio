@@ -12,6 +12,12 @@ export const metadata = {
         title: "Insights | Shahriar Kabir",
         description: "Deep dives into systems thinking, operational strategy, AI orchestration, and the evolving future of globally distributed teams.",
         type: "website",
+        images: [{
+            url: "/og-image.jpg",
+            width: 1200,
+            height: 630,
+            alt: "Shahriar Kabir - Process Architect"
+        }]
     }
 };
 

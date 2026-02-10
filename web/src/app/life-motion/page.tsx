@@ -16,6 +16,12 @@ export const metadata = {
         title: "Life & Motion | Shahriar Kabir",
         description: "A forensic record of momentum, global exploration, and cultural navigation across diverse regions, from Dhaka to the world.",
         type: "website",
+        images: [{
+            url: "/og-image.jpg",
+            width: 1200,
+            height: 630,
+            alt: "Shahriar Kabir - Process Architect"
+        }]
     }
 };
 
