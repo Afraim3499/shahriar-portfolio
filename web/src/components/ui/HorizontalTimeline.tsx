@@ -48,7 +48,7 @@ const MISSION_DATA = [
     },
     {
         id: 6,
-        year: "2024-Now",
+        year: "2024-Present",
         role: "Director",
         company: "PrimeSync",
         phase: "APEX",
@@ -155,7 +155,7 @@ export function HorizontalTimeline() {
                                         {/* Year Card - Brand Colors */}
                                         <motion.div
                                             className={cn(
-                                                "relative w-24 h-24 rounded-2xl cursor-pointer",
+                                                "relative w-32 h-20 rounded-2xl cursor-pointer",
                                                 "flex items-center justify-center",
                                                 "bg-gradient-to-br from-primary to-accent shadow-2xl",
                                                 "border-4",
@@ -173,7 +173,7 @@ export function HorizontalTimeline() {
                                             }}
                                         >
                                             <span className={cn(
-                                                "font-bold text-base drop-shadow-lg transition-colors",
+                                                "font-bold text-sm drop-shadow-lg transition-colors text-center px-2",
                                                 isActive ? "text-white" : "text-white/80"
                                             )}>
                                                 {mission.year}
