@@ -43,7 +43,44 @@ export function SchemaData() {
         "@type": "Organization",
         "name": "PrimeSync AI",
         "url": "https://primesync.ai",
-        "logo": "https://shahriar-kabir.com/logo.png" // Fallback logo
+        "logo": "https://shahriar-kabir.com/logo.png"
+    };
+
+    const websiteSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Shahriar Kabir",
+        "url": "https://shahriar-kabir.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://shahriar-kabir.com/thinking?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    };
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Insights",
+                "item": "https://shahriar-kabir.com/thinking"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Career",
+                "item": "https://shahriar-kabir.com/career"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Dossier",
+                "item": "https://shahriar-kabir.com/dossier"
+            }
+        ]
     };
 
     return (
@@ -55,6 +92,14 @@ export function SchemaData() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
             />
         </>
     );

@@ -1,19 +1,27 @@
 import { MetadataRoute } from 'next'
+import { getAllPosts } from '@/lib/mdx'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://shahriar-kabir.com'
 
-    const routes = [
+    // Fetch all thinking posts to index them automatically
+    const thinkingPosts = await getAllPosts("thinking");
+    const thinkingRoutes = thinkingPosts.map((post) => ({
+        url: `${baseUrl}/thinking/${post.slug}`,
+        lastModified: new Date(post.date),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+    }));
+
+    // Static core routes
+    const coreRoutes = [
         '',
         '/dossier',
         '/career',
         '/thinking',
         '/life-motion',
-        '/thinking/bangladesh-hub',
-        '/thinking/billing-models',
-        '/thinking/bpo-cx-strategy',
-        '/thinking/payment-success',
-        '/thinking/mobile-auto-repair-ai',
+        '/privacy',
+        '/terms'
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
@@ -21,5 +29,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: route === '' ? 1 : 0.8,
     }))
 
-    return routes
+    return [...coreRoutes, ...thinkingRoutes]
 }
