@@ -3,7 +3,7 @@ export function SchemaData() {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Shahriar Kabir",
-        "jobTitle": "Systems Architect & Operations Leader",
+        "jobTitle": "Process Architect & Operations Leader",
         "url": "https://shahriar-kabir.com",
         "knowsAbout": [
             "AI Voice Agent Orchestration",
@@ -18,7 +18,7 @@ export function SchemaData() {
                 "@type": "City",
                 "name": "Global"
             },
-            "description": "Leading team of 55+ in AI Voice Agent operations and systems architecture."
+            "description": "Leading team of 55+ in AI Voice Agent operations and process architecture."
         },
         "sameAs": [
             "https://linkedin.com/in/kabirshahriar",
@@ -30,7 +30,7 @@ export function SchemaData() {
             "@type": "Organization",
             "name": "PrimeSync AI"
         },
-        "description": "Systems Architect and Director of Operations based in Dhaka, specializing in building and operating global teams at scale.",
+        "description": "Process Architect and Director of Operations based in Dhaka, specializing in building and operating global teams at scale.",
         "image": "https://shahriar-kabir.com/images/shahriar-profile.jpg",
         "address": {
             "@type": "PostalAddress",

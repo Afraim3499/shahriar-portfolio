@@ -5,7 +5,7 @@ export const runtime = 'edge';
 
 export async function GET(req: NextRequest) {
     const { searchParams } = new URL(req.url);
-    const title = searchParams.get('title') || 'Systems Architect';
+    const title = searchParams.get('title') || 'Process Architect';
     const category = searchParams.get('category') || 'OPERATIONS';
 
     return new ImageResponse(
@@ -49,7 +49,7 @@ export async function GET(req: NextRequest) {
                 {/* Author Attribution */}
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                     <span style={{ color: '#9CA3AF', fontSize: '28px', fontFamily: 'sans-serif', letterSpacing: '2px' }}>
-                        SHAHRIAR KABIR | SYSTEMS ARCHITECT
+                        SHAHRIAR KABIR | PROCESS ARCHITECT
                     </span>
                 </div>
             </div>

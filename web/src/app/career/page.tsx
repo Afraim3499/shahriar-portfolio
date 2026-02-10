@@ -101,7 +101,7 @@ export default function CareerPage() {
 
                     <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 pt-12 mt-8 border-t border-white/5">
                         <p className="text-xl md:text-2xl text-gray-400 max-w-2xl leading-relaxed font-serif italic">
-                            A complete chronological record of deployments, strategic roles, and operational command across a decade of global systems architectural design.
+                            A complete chronological record of deployments, strategic roles, and operational command across a decade of global process architectural design.
                         </p>
                         <div className="font-mono text-[10px] text-white/30 flex flex-col gap-2 items-start md:items-end tracking-[0.2em]">
                             <div className="flex gap-4"><span>Experience:</span> <span className="text-white font-bold">10 Years</span></div>

@@ -29,30 +29,30 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://shahriar-kabir.com'),
   title: {
-    default: "Shahriar Kabir | Systems Architect",
+    default: "Shahriar Kabir | Process Architect",
     template: "%s | Shahriar Kabir"
   },
-  description: "Director of Operations & Systems Architect specializing in building and operating global teams at scale. Based in Dhaka.",
-  keywords: ["Systems Architect", "Operations Strategy", "Global Teams", "PrimeSync AI", "AI Operations", "Dhaka Tech", "BPO Strategy"],
+  description: "Director of Operations & Process Architect specializing in building and operating global teams at scale. Based in Dhaka.",
+  keywords: ["Process Architect", "Operations Strategy", "Global Teams", "PrimeSync AI", "AI Operations", "Dhaka Tech", "BPO Strategy"],
   authors: [{ name: "Shahriar Kabir" }],
   creator: "Shahriar Kabir",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://shahriar-kabir.com",
-    title: "Shahriar Kabir | Systems Architect",
+    title: "Shahriar Kabir | Process Architect",
     description: "Building and Operating Global Teams at Scale. Director of Operations at PrimeSync AI.",
     siteName: "Shahriar Kabir",
     images: [{
       url: "/og-image.jpg",
       width: 1200,
       height: 630,
-      alt: "Shahriar Kabir - Systems Architect"
+      alt: "Shahriar Kabir - Process Architect"
     }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shahriar Kabir | Systems Architect",
+    title: "Shahriar Kabir | Process Architect",
     description: "Director of Operations at PrimeSync AI. Building global teams.",
     site: "@shahriarhisham",
     creator: "@shahriarhisham",
