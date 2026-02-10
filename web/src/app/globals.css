@@ -1,0 +1,312 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* === CSS Variables for Dark Theme (from Resume Repo) === */
+:root {
+  /* Dark Mode (Default) */
+  --background: #030712;
+  /* Gray 950 - Deep dark */
+  --foreground: #F9FAFB;
+  /* Gray 50 - Light text */
+
+  --primary: #10B981;
+  /* Emerald 500 */
+  --primary-dark: #059669;
+  /* Emerald 600 */
+  --primary-light: #34D399;
+  /* Emerald 400 */
+  --primary-foreground: #FFFFFF;
+
+  --accent: #8B5CF6;
+  /* Violet 500 */
+  --accent-dark: #7C3AED;
+  /* Violet 600 */
+  --accent-light: #A5B4FC;
+  /* Indigo 300 */
+  --accent-foreground: #FFFFFF;
+
+  --secondary: #1F2937;
+  /* Gray 800 */
+  --secondary-foreground: #F3F4F6;
+  /* Gray 100 */
+}
+
+/* Light mode override (optional) */
+:root.light,
+.light {
+  --background: #FFFFFF;
+  --foreground: #030712;
+  --secondary: #F3F4F6;
+  --secondary-foreground: #030712;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+  }
+
+  /* Enhanced text selection */
+  ::selection {
+    background-color: var(--primary);
+    color: #000000;
+  }
+
+  /* Accessibility: Focus Ring for Keyboard Navigation */
+  :focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+
+  /* Remove focus outline for mouse users */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Display Font Utility - Uses Fraunces Serif */
+  .font-display {
+    font-family: var(--font-fraunces), Georgia, serif;
+    font-weight: 700;
+  }
+
+  /* Alias for backward compatibility */
+  .font-stint {
+    font-family: var(--font-fraunces), Georgia, serif;
+    font-weight: 700;
+  }
+}
+
+/* Global Scrollbar Architecture - Dark Ops */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+@layer utilities {
+
+  /* === GRID BORDER (Industrial) === */
+  .border-grid {
+    border: 1px solid #C0C0C0;
+  }
+
+  /* === SCROLLBAR STYLING === */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-spruce::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+  }
+
+  .scrollbar-spruce::-webkit-scrollbar-track {
+    background: var(--background);
+  }
+
+  .scrollbar-spruce::-webkit-scrollbar-thumb {
+    background: var(--foreground);
+    opacity: 0.2;
+    border-radius: 5px;
+  }
+
+  /* === TEXT GRADIENT (Emerald → Violet) === */
+  .text-gradient {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, var(--primary), var(--accent));
+  }
+
+  .text-gradient-reverse {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, var(--accent), var(--primary));
+  }
+
+  /* === GLASSMORPHISM === */
+  .glass {
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    background: rgba(31, 41, 55, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-light {
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    background: rgba(243, 244, 246, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  /* === AMBIENT GRADIENTS === */
+  .ambient-emerald {
+    background: radial-gradient(ellipse at top left, rgba(16, 185, 129, 0.15), transparent 50%);
+  }
+
+  .ambient-violet {
+    background: radial-gradient(ellipse at bottom right, rgba(139, 92, 246, 0.15), transparent 50%);
+  }
+
+  .ambient-center {
+    background: radial-gradient(ellipse at center, rgba(16, 185, 129, 0.08), transparent 70%);
+  }
+
+  .ambient-combined {
+    background:
+      radial-gradient(ellipse at top left, rgba(16, 185, 129, 0.15), transparent 50%),
+      radial-gradient(ellipse at bottom right, rgba(139, 92, 246, 0.15), transparent 50%);
+  }
+
+  /* === PREMIUM HOVER EFFECTS === */
+  .premium-hover {
+    transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .premium-hover:hover {
+    transform: translateY(-4px);
+  }
+
+  .premium-hover-subtle {
+    transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .premium-hover-subtle:hover {
+    transform: translateY(-2px);
+  }
+
+  /* === BORDER GLOW EFFECTS === */
+  .glow-emerald {
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+  }
+
+  .glow-violet {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  }
+
+  .hover-glow-emerald {
+    transition: box-shadow 0.3s ease;
+  }
+
+  .hover-glow-emerald:hover {
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.4);
+  }
+
+  .hover-glow-white {
+    transition: box-shadow 0.3s ease;
+  }
+
+  .hover-glow-white:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+  }
+
+  /* === GRADIENT BORDERS === */
+  .border-gradient {
+    position: relative;
+    background: linear-gradient(var(--background), var(--background)) padding-box,
+      linear-gradient(to right, var(--primary), var(--accent)) border-box;
+    border: 1px solid transparent;
+  }
+
+  /* === ANIMATIONS === */
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+
+    25% {
+      transform: translateY(-20px) translateX(10px);
+    }
+
+    50% {
+      transform: translateY(0) translateX(20px);
+    }
+
+    75% {
+      transform: translateY(20px) translateX(10px);
+    }
+  }
+
+  @keyframes pulse-soft {
+
+    0%,
+    100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+
+    50% {
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+  }
+
+  .animate-float {
+    animation: float 20s infinite ease-in-out;
+  }
+
+  .animate-pulse-soft {
+    animation: pulse-soft 8s infinite ease-in-out;
+  }
+
+  /* === MASK FADE === */
+  .mask-linear-fade {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+
+  /* === DARK SECTION BACKGROUNDS === */
+  .bg-dark {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  .bg-dark-secondary {
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+  }
+
+  /* === KEN BURNS EFFECT === */
+  @keyframes ken-burns {
+    0% {
+      transform: scale(1) translate(0, 0);
+    }
+
+    50% {
+      transform: scale(1.08) translate(-1%, -1%);
+    }
+
+    100% {
+      transform: scale(1) translate(0, 0);
+    }
+  }
+
+  .animate-ken-burns {
+    animation: ken-burns 6s ease-in-out infinite;
+  }
+}
