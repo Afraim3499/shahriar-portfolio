@@ -41,7 +41,6 @@ export function Navigation() {
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
-            setIsVisible(true);
         } else {
             document.body.style.overflow = 'unset';
         }
@@ -124,7 +123,10 @@ export function Navigation() {
                     {/* Mobile Toggle */}
                     <button
                         className="md:hidden p-4 text-foreground border border-foreground/20 rounded-sm hover:bg-foreground/10 transition-colors"
-                        onClick={() => setIsOpen(!isOpen)}
+                        onClick={() => {
+                            setIsOpen(!isOpen);
+                            if (!isOpen) setIsVisible(true);
+                        }}
                         aria-label={isOpen ? "Close menu" : "Open menu"}
                         aria-expanded={isOpen ? "true" : "false"}
                     >

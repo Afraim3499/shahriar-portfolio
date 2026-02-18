@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 interface RotatedVideoFrameProps {
@@ -117,10 +118,11 @@ export function RotatedVideoFrame({ videoId, title = "Video", className }: Rotat
                     "absolute inset-0 overflow-hidden transition-opacity duration-300",
                     shouldPlay ? "opacity-0 pointer-events-none" : "opacity-100"
                 )}>
-                    <img
+                    <Image
                         src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
                         alt={title}
-                        className="absolute top-1/2 left-1/2 h-[180%] w-auto max-w-none object-cover -translate-x-1/2 -translate-y-1/2 -rotate-90"
+                        fill
+                        className="h-[180%] w-auto max-w-none object-cover -translate-x-1/2 -translate-y-1/2 -rotate-90"
                     />
                     <div className="absolute inset-0 bg-charcoal/30" />
 
@@ -147,7 +149,7 @@ export function RotatedVideoFrame({ videoId, title = "Video", className }: Rotat
                     shouldPlay ? "bg-red-500 animate-pulse" : "bg-spruce"
                 )} />
                 <span className="font-mono text-[10px] text-stone uppercase tracking-widest">
-                    {shouldPlay ? "NOW_PLAYING" : "HOVER_TO_PLAY"} // ROTATED_FRAME
+                    {shouldPlay ? "NOW_PLAYING" : "HOVER_TO_PLAY" /* ROTATED_FRAME */}
                 </span>
             </div>
         </div>

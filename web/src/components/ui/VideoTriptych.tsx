@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import { Play } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -63,10 +64,11 @@ const VerticalShort = ({
                 "absolute inset-0 transition-opacity duration-700",
                 isActive ? "opacity-0 pointer-events-none" : "opacity-100"
             )}>
-                <img
+                <Image
                     src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
                     alt={`Short ${position}`}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
 
@@ -113,10 +115,11 @@ const RotatedCenter = ({
                 "absolute inset-0 overflow-hidden transition-opacity duration-700",
                 isActive ? "opacity-0 pointer-events-none" : "opacity-100"
             )}>
-                <img
+                <Image
                     src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
                     alt="Center Short"
-                    className="absolute top-1/2 left-1/2 h-[180%] w-auto max-w-none object-cover -translate-x-1/2 -translate-y-1/2 -rotate-90 transition-transform duration-1000 group-hover:scale-105"
+                    fill
+                    className="h-[180%] w-auto max-w-none object-cover -translate-x-1/2 -translate-y-1/2 -rotate-90 transition-transform duration-1000 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
 

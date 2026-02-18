@@ -71,7 +71,7 @@ export function NeuralNetwork() {
 
             // Draw Connections
             ctx.beginPath();
-            nodes.forEach((node, i) => {
+            nodes.forEach((node) => {
                 node.connections.forEach(targetIdx => {
                     const target = nodes[targetIdx];
                     // Gradient Line

@@ -6,8 +6,6 @@ import { VideoTriptych } from "@/components/ui/VideoTriptych";
 import { SpotlightCarousel } from "@/components/life-motion/SpotlightCarousel";
 import { RegionExplorer } from "@/components/life-motion/RegionExplorer";
 import { InstagramWidescreen } from "@/components/life-motion/InstagramWidescreen";
-import Link from "next/link";
-import Image from "next/image";
 
 export const metadata = {
     title: "Life & Motion | Shahriar Kabir",

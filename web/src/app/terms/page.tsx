@@ -20,7 +20,7 @@ export default function TermsPage() {
                     <section>
                         <h2 className="font-stint text-2xl text-white mb-4 tracking-wide uppercase">1. Acceptance of Terms</h2>
                         <p>
-                            By accessing or using shahriar-kabir.com ("the Site"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the Site.
+                            By accessing or using shahriar-kabir.com (&quot;the Site&quot;), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the Site.
                         </p>
                     </section>
 
@@ -41,7 +41,7 @@ export default function TermsPage() {
                     <section>
                         <h2 className="font-stint text-2xl text-white mb-4 tracking-wide uppercase">4. User Conduct</h2>
                         <p>
-                            You agree to use the Site only for lawful purposes. You are prohibited from using the Site to engage in any activity that could damage, disable, or impair the Site or interfere with any other party's use of the Site.
+                            You agree to use the Site only for lawful purposes. You are prohibited from using the Site to engage in any activity that could damage, disable, or impair the Site or interfere with any other party&apos;s use of the Site.
                         </p>
                     </section>
 

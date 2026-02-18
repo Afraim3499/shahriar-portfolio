@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { DecisionMarker } from "@/components/ui/DecisionMarker";
 
 export default function PrivacyPage() {
@@ -21,7 +20,7 @@ export default function PrivacyPage() {
                     <section>
                         <h2 className="font-stint text-2xl text-white mb-4 tracking-wide uppercase">1. Introduction</h2>
                         <p>
-                            I, Shahriar Kabir ("I," "my," or "me"), am committed to protecting your privacy. This Privacy Policy explains how I collect, use, and safeguard your information when you visit my website, shahriar-kabir.com.
+                            I, Shahriar Kabir (&quot;I,&quot; &quot;my,&quot; or &quot;me&quot;), am committed to protecting your privacy. This Privacy Policy explains how I collect, use, and safeguard your information when you visit my website, shahriar-kabir.com.
                         </p>
                     </section>
 
@@ -44,7 +43,7 @@ export default function PrivacyPage() {
                         </p>
                         <ul className="list-disc pl-5 space-y-2 marker:text-primary">
                             <li>Facilitate strategic collaborations and respond to inquiries.</li>
-                            <li>Improve my website's functionality and user experience.</li>
+                            <li>Improve my website&apos;s functionality and user experience.</li>
                             <li>Monitor and analyze trends in site usage.</li>
                         </ul>
                     </section>

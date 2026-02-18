@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MapPin, ArrowRight } from "lucide-react";
 
 interface RegionCardItem {
     id: string;
@@ -163,7 +162,7 @@ export function RegionExplorer() {
                                     )}
                                     {activeRegion.quote && (
                                         <div className="p-8 border border-white/5 bg-white/[0.02] rounded-3xl backdrop-blur-3xl italic text-white/80 font-serif text-lg leading-relaxed shadow-xl mt-8">
-                                            "{activeRegion.quote}"
+                                            &quot;{activeRegion.quote}&quot;
                                         </div>
                                     )}
                                 </div>

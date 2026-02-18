@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Play, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -42,10 +43,11 @@ export function ShortsGallery({ videoIds, className }: ShortsGalleryProps) {
                     >
                         {/* Thumbnail with Smooth Zoom */}
                         <div className="absolute inset-0 transition-transform duration-1000 ease-out group-hover:scale-110">
-                            <img
+                            <Image
                                 src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
                                 alt={`Short ${index + 1}`}
-                                className="absolute inset-0 w-full h-full object-cover"
+                                fill
+                                className="object-cover"
                             />
                         </div>
 
@@ -75,7 +77,6 @@ export function ShortsGallery({ videoIds, className }: ShortsGalleryProps) {
                         className="fixed inset-0 z-50 bg-charcoal/95 backdrop-blur-md flex items-center justify-center"
                         onClick={() => setActiveIndex(null)}
                         aria-label={activeIndex !== null ? "Close video player" : "Open video player"}
-                        aria-expanded={activeIndex !== null}
                         role="dialog"
                         aria-modal="true"
                     >

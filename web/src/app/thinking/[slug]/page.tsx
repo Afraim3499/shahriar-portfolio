@@ -7,7 +7,7 @@ import { KeyTakeaway } from "@/components/mdx/KeyTakeaway";
 import { PostCTA } from "@/components/mdx/PostCTA";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, Clock, Tag, Calendar } from "lucide-react";
+import { ArrowLeft, Tag, Calendar } from "lucide-react";
 
 export async function generateStaticParams() {
     const posts = await getAllPosts("thinking");

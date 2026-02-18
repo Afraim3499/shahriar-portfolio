@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowUpRight, Globe, Newspaper, Award } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 const NEWS_ARTICLES = [
     {

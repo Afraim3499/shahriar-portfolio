@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { HeroBackground } from "@/components/ui/HeroBackground";
-import { Users, Shield, Zap, Check, MapPin, Briefcase, Globe, Award, ArrowUpRight } from "lucide-react";
-import { motion } from "framer-motion";
+import { Users, Shield, Zap, Check, MapPin, ArrowUpRight } from "lucide-react";
 
 export default function AboutPage() {
     return (
@@ -40,10 +40,13 @@ export default function AboutPage() {
                         {/* Profile Image */}
                         <section className="rounded-3xl border border-white/10 bg-white/[0.02] backdrop-blur-xl relative overflow-hidden group">
                             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-[50px] -z-10" />
-                            <img
+                            <Image
                                 src="/images/dossier-image.webp"
                                 alt="SHA - Process Architect"
+                                width={800}
+                                height={1200}
                                 className="w-full h-auto object-cover rounded-3xl"
+                                priority
                             />
                         </section>
 

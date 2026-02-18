@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useAnimationControls } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 interface ReelData {
     id: string;
@@ -23,7 +23,6 @@ const EXTENDED_REELS = [...REELS, ...REELS];
 
 export function InstagramWidescreen() {
     const controls = useAnimationControls();
-    const [isHovered, setIsHovered] = useState(false);
 
     // Initial Animation Loop (Desktop Only)
     // We move -50% because the second set is an exact double of the first.
@@ -88,11 +87,9 @@ export function InstagramWidescreen() {
             <div
                 className="hidden md:block relative w-full overflow-hidden py-10"
                 onMouseEnter={() => {
-                    setIsHovered(true);
                     controls.stop();
                 }}
                 onMouseLeave={() => {
-                    setIsHovered(false);
                     controls.start({
                         x: "-50%",
                         transition: {

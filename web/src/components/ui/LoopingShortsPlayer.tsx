@@ -40,7 +40,7 @@ export function LoopingShortsPlayer({ videoIds, className }: LoopingShortsPlayer
         event.target.mute(); // Mute by default for autoplay
     };
 
-    const onEnd: YouTubeProps["onEnd"] = (event) => {
+    const onEnd: YouTubeProps["onEnd"] = () => {
         // Play next video
         const nextIndex = (currentIndex + 1) % videoIds.length;
         setCurrentIndex(nextIndex);
