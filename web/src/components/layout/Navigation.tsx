@@ -126,7 +126,7 @@ export function Navigation() {
                         className="md:hidden p-4 text-foreground border border-foreground/20 rounded-sm hover:bg-foreground/10 transition-colors"
                         onClick={() => setIsOpen(!isOpen)}
                         aria-label={isOpen ? "Close menu" : "Open menu"}
-                        aria-expanded={isOpen}
+                        aria-expanded={isOpen ? "true" : "false"}
                     >
                         {isOpen ? <X size={18} /> : <Menu size={18} />}
                     </button>
