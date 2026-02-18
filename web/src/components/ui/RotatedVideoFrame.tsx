@@ -119,7 +119,7 @@ export function RotatedVideoFrame({ videoId, title = "Video", className }: Rotat
                     shouldPlay ? "opacity-0 pointer-events-none" : "opacity-100"
                 )}>
                     <Image
-                        src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                        src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
                         alt={title}
                         fill
                         className="h-[180%] w-auto max-w-none object-cover -translate-x-1/2 -translate-y-1/2 -rotate-90"

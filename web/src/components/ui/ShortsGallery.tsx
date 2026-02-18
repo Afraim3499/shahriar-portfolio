@@ -44,7 +44,7 @@ export function ShortsGallery({ videoIds, className }: ShortsGalleryProps) {
                         {/* Thumbnail with Smooth Zoom */}
                         <div className="absolute inset-0 transition-transform duration-1000 ease-out group-hover:scale-110">
                             <Image
-                                src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                                src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
                                 alt={`Short ${index + 1}`}
                                 fill
                                 className="object-cover"

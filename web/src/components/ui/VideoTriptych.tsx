@@ -65,7 +65,7 @@ const VerticalShort = ({
                 isActive ? "opacity-0 pointer-events-none" : "opacity-100"
             )}>
                 <Image
-                    src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                    src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
                     alt={`Short ${position}`}
                     fill
                     className="object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -116,7 +116,7 @@ const RotatedCenter = ({
                 isActive ? "opacity-0 pointer-events-none" : "opacity-100"
             )}>
                 <Image
-                    src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                    src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
                     alt="Center Short"
                     fill
                     className="h-[180%] w-auto max-w-none object-cover -translate-x-1/2 -translate-y-1/2 -rotate-90 transition-transform duration-1000 group-hover:scale-105"
