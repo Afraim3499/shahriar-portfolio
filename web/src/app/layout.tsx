@@ -7,6 +7,7 @@ import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
 import { SchemaData } from "@/components/layout/SchemaData";
 import { CookieConsent } from "@/components/ui/CookieConsent";
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -123,6 +124,7 @@ export default function RootLayout({
           src="//www.instagram.com/embed.js"
           strategy="lazyOnload"
         />
+        <Analytics />
       </body>
     </html>
   );
