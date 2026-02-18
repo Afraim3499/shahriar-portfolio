@@ -6,7 +6,7 @@ import { ImpactMetrics } from "@/components/career/ImpactMetrics";
 import { ArrowRight, ChevronsDown, Briefcase, Globe, Target } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { BlueprintBackground } from "@/components/ui/Blueprint";
+import { HeroBackground } from "@/components/ui/HeroBackground";
 
 const careerGroups = [
     {
@@ -85,7 +85,7 @@ const careerGroups = [
 export default function CareerPage() {
     return (
         <div className="bg-background min-h-screen relative overflow-x-hidden text-foreground">
-            <BlueprintBackground />
+            <HeroBackground />
 
             {/* Header Block - Cinematic Entrance */}
             <header className="max-w-7xl mx-auto px-6 pt-40 pb-24 relative z-10 border-b border-white/10">

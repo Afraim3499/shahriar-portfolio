@@ -1,8 +1,10 @@
 import { DecisionMarker } from "@/components/ui/DecisionMarker";
+import { HeroBackground } from "@/components/ui/HeroBackground";
 
 export default function PrivacyPage() {
     return (
-        <div className="flex flex-col min-h-screen bg-background pt-32 pb-24">
+        <div className="flex flex-col min-h-screen bg-background relative overflow-x-hidden pt-32 pb-24">
+            <HeroBackground />
             <div className="max-w-4xl mx-auto px-6">
                 {/* Header */}
                 <div className="mb-16">

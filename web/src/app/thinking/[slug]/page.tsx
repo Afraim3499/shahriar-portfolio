@@ -2,7 +2,7 @@ import { getPostBySlug, getAllPosts } from "@/lib/mdx";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { DecisionMarker } from "@/components/ui/DecisionMarker";
-import { BlueprintBackground } from "@/components/ui/Blueprint";
+import { HeroBackground } from "@/components/ui/HeroBackground";
 import { KeyTakeaway } from "@/components/mdx/KeyTakeaway";
 import { PostCTA } from "@/components/mdx/PostCTA";
 import Link from "next/link";
@@ -81,7 +81,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
     return (
         <div className="bg-background min-h-screen relative overflow-x-hidden text-foreground">
-            <BlueprintBackground />
+            <HeroBackground />
 
             <article className="max-w-4xl mx-auto px-6 pt-40 pb-32 relative z-10">
                 <script
