@@ -4,16 +4,16 @@ PrimeSync
 Full-time · 2 yrs 2 mosFull-time · 2 yrs 2 mos
 Dhaka, Bangladesh · On-siteDhaka, Bangladesh · On-site
  helped me get this jobLinkedIn helped me get this job
-Director of Operations
-Director of Operations
+Head of Operations
+Head of Operations
 Jan 2026 - Present · 2 mosJan 2026 to Present · 2 mos
 Helped PrimeSync lock in its product–market sweet spot and enter a focused scaling phase. Currently leading both operational and commercial execution while growing high-performing teams across Dhaka and overseas. Driving scalable CX by aligning people, process and technology.
 Helped PrimeSync lock in its product–market sweet spot and enter a focused scaling phase. Currently leading both operational and commercial execution while growing high-performing teams across Dhaka and overseas. Driving scalable CX by aligning people, process and technology.
 Acting Chief of Staff
 Acting Chief of Staff
 Jan 2026 - Present · 2 mosJan 2026 to Present · 2 mos
-Currently serving as Acting Chief of Staff, supporting executive leadership with cross-team coordination and execution of strategic priorities. Act as a central point of alignment across teams while ensuring follow-through on key initiatives. Continue to balance this role alongside my responsibilities as Director of Operations.
-Currently serving as Acting Chief of Staff, supporting executive leadership with cross-team coordination and execution of strategic priorities. Act as a central point of alignment across teams while ensuring follow-through on key initiatives. Continue to balance this role alongside my responsibilities as Director of Operations.
+Currently serving as Acting Chief of Staff, supporting executive leadership with cross-team coordination and execution of strategic priorities. Act as a central point of alignment across teams while ensuring follow-through on key initiatives. Continue to balance this role alongside my responsibilities as Head of Operations.
+Currently serving as Acting Chief of Staff, supporting executive leadership with cross-team coordination and execution of strategic priorities. Act as a central point of alignment across teams while ensuring follow-through on key initiatives. Continue to balance this role alongside my responsibilities as Head of Operations.
 Manager, Operations
 Manager, Operations
 Jan 2024 - Jan 2026 · 2 yrs 1 moJan 2024 to Jan 2026 · 2 yrs 1 mo

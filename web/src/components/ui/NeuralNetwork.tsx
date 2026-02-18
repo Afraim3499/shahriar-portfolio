@@ -19,7 +19,7 @@ const DATA = [
     { year: "2015", label: "DATA ANALYST", sub: "Global Freelance", x: 0.15, y: 0.8 },
     { year: "2022", label: "CREDENTIALING MGR", sub: "Radiant Data", x: 0.35, y: 0.6 },
     { year: "2024", label: "OPS MANAGER", sub: "PrimeSync", x: 0.6, y: 0.4 },
-    { year: "2026", label: "GLOBAL OPS DIRECTOR", sub: "PrimeSync (USA/Global)", x: 0.85, y: 0.2 },
+    { year: "2026", label: "HEAD OF GLOBAL OPERATIONS", sub: "PrimeSync (USA/Global)", x: 0.85, y: 0.2 },
 ];
 
 export function NeuralNetwork() {

@@ -49,7 +49,7 @@ const MISSION_DATA = [
     {
         id: 6,
         year: "2024-Present",
-        role: "Director",
+        role: "Head of Operations",
         company: "PrimeSync",
         phase: "APEX",
         description: "Leading global mission units. Orchestrating AI systems and elite talent at scale."

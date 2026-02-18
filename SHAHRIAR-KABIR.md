@@ -35,7 +35,7 @@ Think: *“If someone Googles him, this is where their decision is made.”*
 ### **Primary Identity**
 
 **Shahriar Kabir**  
- Director of Operations & Acting Chief of Staff @ PrimeSync  
+ Head of Operations & Acting Chief of Staff @ PrimeSync  
  CX, BPO & AI-Driven Operations Strategist
 
 ### **Core Positioning Statement (Internal Use)**
@@ -168,7 +168,7 @@ This page should read like a **well-written long-form profile**, not a bio.
 
    * From blank slate to CX \+ AI engine
 
-   * Director \+ Acting Chief of Staff
+   * Head \+ Acting Chief of Staff
 
    * What problems he solved, not titles
 
@@ -397,7 +397,7 @@ Then the strategy worked.
 
 ## Professional Career
 
-Shahriar Kabir is a CX/BPO operations leader and data analyst. He currently serves as **Director of Operations and Acting Chief of Staff at PrimeSync** (Dhaka), where since January 2026 he has driven company-wide strategy and AI-human integration. According to PrimeSync’s website, he “builds scalable CX operations by bringing together AI and human connection” and “drives seamless collaboration between AI and cross-functional teams”[\[1\]](https://www.primesync.ai/about#:~:text=Shahriar%2C%20Head%20of%20operations). In this role he supports executive leadership, coordinating strategic priorities across teams while also serving as Director of Operations[\[2\]](file://file_0000000094ec7209afb9dfd9ef55c40f#:~:text=Acting%20Chief%20of%20Staff%20January,Present%C2%A0%281%20month%29%20Dhaka%2C%20Bangladesh).
+Shahriar Kabir is a CX/BPO operations leader and data analyst. He currently serves as **Head of Operations and Acting Chief of Staff at PrimeSync** (Dhaka), where since January 2026 he has driven company-wide strategy and AI-human integration. According to PrimeSync’s website, he “builds scalable CX operations by bringing together AI and human connection” and “drives seamless collaboration between AI and cross-functional teams”[\[1\]](https://www.primesync.ai/about#:~:text=Shahriar%2C%20Head%20of%20operations). In this role he supports executive leadership, coordinating strategic priorities across teams while also serving as Head of Operations[\[2\]](file://file_0000000094ec7209afb9dfd9ef55c40f#:~:text=Acting%20Chief%20of%20Staff%20January,Present%C2%A0%281%20month%29%20Dhaka%2C%20Bangladesh).
 
 From January 2024 through January 2026, Shahriar was **Manager of Operations at PrimeSync**, essentially shaping the fledgling BPO/CX business from the ground up. He “designed our operations” and shifted the vision from a traditional BPO to a “CX-driven powerhouse” that combines AI and human touch for customer care[\[3\]](file://file_0000000094ec7209afb9dfd9ef55c40f#:~:text=When%20I%20joined%20PrimeSync%2C%20it,exceptional%20results%20across%20multiple%20verticals). He built and trained back-office sales/marketing teams, crafted onboarding processes, and fostered a culture of innovation and precision to “bridge operational excellence with cutting-edge CX strategies”[\[3\]](file://file_0000000094ec7209afb9dfd9ef55c40f#:~:text=When%20I%20joined%20PrimeSync%2C%20it,exceptional%20results%20across%20multiple%20verticals). Prior to that, he was a **Professional Freelancer on Upwork (Oct 2015 – Jan 2025\)** specializing in data analysis and Excel modeling. His Upwork profile notes he has years of experience “analyzing and visualizing data in MS Excel” with tools for analytics, modeling, and automation[\[4\]](file://file_0000000094ec7209afb9dfd9ef55c40f#:~:text=Upwork%20Professional%20Freelancer%20October%202015%C2%A0,9%20years%204%20months).
 

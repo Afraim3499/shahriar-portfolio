@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     default: "Shahriar Kabir | Process Architect",
     template: "%s | Shahriar Kabir"
   },
-  description: "Director of Operations & Process Architect specializing in building and operating global teams at scale. Based in Dhaka.",
+  description: "Head of Operations & Process Architect specializing in building and operating global teams at scale. Based in Dhaka.",
   keywords: ["Process Architect", "Operations Strategy", "Global Teams", "PrimeSync AI", "AI Operations", "Dhaka Tech", "BPO Strategy"],
   authors: [{ name: "Shahriar Kabir" }],
   creator: "Shahriar Kabir",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://shahriar-kabir.com",
     title: "Shahriar Kabir | Process Architect",
-    description: "Director of Operations & Process Architect specializing in building and operating high-performance global teams at scale. Architecting AI-enabled customer experience at absolute scale.",
+    description: "Head of Operations & Process Architect specializing in building and operating high-performance global teams at scale. Architecting AI-enabled customer experience at absolute scale.",
     siteName: "Shahriar Kabir",
     images: [{
       url: "/og-image.jpg",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Shahriar Kabir | Process Architect",
-    description: "Director of Operations & Process Architect specializing in building and operating high-performance global teams at scale. Lead Orchestrator at PrimeSync AI.",
+    description: "Head of Operations & Process Architect specializing in building and operating high-performance global teams at scale. Lead Orchestrator at PrimeSync AI.",
     site: "@shahriarhisham",
     creator: "@shahriarhisham",
     images: ["/og-image.jpg"]

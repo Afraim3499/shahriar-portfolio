@@ -32,7 +32,7 @@ export function CareerTimeline() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <TimelineCard
                         year="2023 - Now"
-                        role="Director of Operations"
+                        role="Head of Operations"
                         company="PrimeSync AI"
                         description="Leading global operations across US, Canada, LATAM, and Philippines."
                         current

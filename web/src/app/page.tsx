@@ -79,7 +79,7 @@ export default function Home() {
                         transition={{ delay: 1.5, duration: 1.2 }}
                         className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto leading-relaxed mb-8 font-light tracking-[0.15em] font-sans"
                     >
-                        <span className="text-gradient font-bold">Director of Operations</span> at <span className="text-primary font-bold">PrimeSync AI</span>. <br className="hidden md:block" />
+                        <span className="text-gradient font-bold">Head of Operations</span> at <span className="text-primary font-bold">PrimeSync AI</span>. <br className="hidden md:block" />
                         Architecting globally distributed teams that deliver AI-enabled customer experience at absolute scale.
                     </motion.p>
 

@@ -30,7 +30,7 @@ export function SchemaData() {
             "@type": "Organization",
             "name": "PrimeSync AI"
         },
-        "description": "Process Architect and Director of Operations based in Dhaka, specializing in building and operating global teams at scale.",
+        "description": "Process Architect and Head of Operations based in Dhaka, specializing in building and operating global teams at scale.",
         "image": "https://shahriar-kabir.com/images/shahriar-profile.jpg",
         "address": {
             "@type": "PostalAddress",

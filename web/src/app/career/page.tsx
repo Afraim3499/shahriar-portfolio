@@ -15,7 +15,7 @@ const careerGroups = [
         roles: [
             {
                 year: "Jan 2026 - Present",
-                role: "Director of Operations",
+                role: "Head of Operations",
                 location: "Dhaka, Bangladesh · On-site",
                 description: "I help guide PrimeSync through its growth phase by aligning execution across teams, regions, and functions. My work spans operational leadership, commercial coordination, and building teams capable of delivering AI-enabled customer experience at scale.",
                 link: "https://www.primesync.ai/about",

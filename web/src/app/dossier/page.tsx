@@ -19,7 +19,7 @@ export default function AboutPage() {
                         <div>
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse shadow-[0_0_10px_#10B981]"></span>
-                                <span className="font-mono text-[10px] tracking-[0.4em] text-primary font-bold">Director of Operations</span>
+                                <span className="font-mono text-[10px] tracking-[0.4em] text-primary font-bold">Head of Operations</span>
                             </div>
                             <h1 className="text-5xl md:text-8xl font-bold text-white tracking-tighter font-stint leading-[0.9]">
                                 Introduction<span className="text-primary">.</span>
@@ -104,7 +104,7 @@ export default function AboutPage() {
 
                             <h2 className="text-4xl md:text-5xl font-bold text-white font-stint tracking-tight mb-8 pt-8 border-t border-white/5">Work @ PrimeSync</h2>
                             <p className="text-gray-300 font-medium">
-                                At PrimeSync, I serve as <span className="text-white font-bold italic">Director of Operations</span> and Acting Chief of Staff. We are building AI-powered customer experience capabilities for U.S. businesses—combining technology with disciplined execution.
+                                At PrimeSync, I serve as <span className="text-white font-bold italic">Head of Operations</span> and Acting Chief of Staff. We are building AI-powered customer experience capabilities for U.S. businesses—combining technology with disciplined execution.
                             </p>
                             <p>
                                 My responsibility is to ensure that growth strengthens the organization rather than stretching it thin. We architect distributed teams that feel in-house, regardless of the longitude.
