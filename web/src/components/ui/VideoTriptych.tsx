@@ -11,6 +11,126 @@ interface VideoTriptychProps {
     className?: string;
 }
 
+// Optimized YouTube embed URL
+const getEmbedUrl = (videoId: string, autoplay: boolean) => {
+    const params = new URLSearchParams({
+        autoplay: autoplay ? '1' : '0',
+        mute: '0',
+        loop: '1',
+        playlist: videoId,
+        controls: '0',
+        modestbranding: '1',
+        rel: '0',
+        playsinline: '1',
+        enablejsapi: '1',
+        iv_load_policy: '3',
+        fs: '0',
+        disablekb: '1',
+        start: '0',
+    });
+    return `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
+};
+
+const VerticalShort = ({
+    videoId,
+    position,
+    isActive,
+    onHover
+}: {
+    videoId: string;
+    position: "left" | "right";
+    isActive: boolean;
+    onHover: (id: string) => void;
+}) => {
+    return (
+        <div
+            className="relative aspect-[9/16] bg-midnight border border-steel/30 overflow-hidden group cursor-pointer"
+            onMouseEnter={() => onHover(videoId)}
+        >
+            {/* Video iframe - always present when active */}
+            {isActive && (
+                <iframe
+                    src={getEmbedUrl(videoId, true)}
+                    title={`Short ${position}`}
+                    className="absolute inset-0 w-full h-full border-0 z-10"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    loading="eager"
+                />
+            )}
+
+            {/* Thumbnail overlay - fades when active */}
+            <div className={cn(
+                "absolute inset-0 transition-opacity duration-700",
+                isActive ? "opacity-0 pointer-events-none" : "opacity-100"
+            )}>
+                <img
+                    src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                    alt={`Short ${position}`}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
+
+                {/* Play indicator */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-14 h-14 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform">
+                        <Play size={20} className="text-white ml-1" fill="currentColor" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+const RotatedCenter = ({
+    videoId,
+    isActive,
+    onHover
+}: {
+    videoId: string;
+    isActive: boolean;
+    onHover: (id: string) => void;
+}) => {
+    return (
+        <div
+            className="relative aspect-[16/9] bg-midnight border border-steel/30 overflow-hidden group cursor-pointer"
+            onMouseEnter={() => onHover(videoId)}
+        >
+            {/* Active rotated iframe */}
+            {isActive && (
+                <div className="absolute inset-0 overflow-hidden z-10">
+                    <iframe
+                        src={getEmbedUrl(videoId, true)}
+                        title="Featured Reel"
+                        className="absolute top-1/2 left-1/2 h-[180%] border-0 aspect-[9/16] -translate-x-1/2 -translate-y-1/2 -rotate-90"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        loading="eager"
+                    />
+                </div>
+            )}
+
+            {/* Thumbnail overlay */}
+            <div className={cn(
+                "absolute inset-0 overflow-hidden transition-opacity duration-700",
+                isActive ? "opacity-0 pointer-events-none" : "opacity-100"
+            )}>
+                <img
+                    src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                    alt="Center Short"
+                    className="absolute top-1/2 left-1/2 h-[180%] w-auto max-w-none object-cover -translate-x-1/2 -translate-y-1/2 -rotate-90 transition-transform duration-1000 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
+
+                {/* Play indicator */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-20 h-20 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform shadow-2xl">
+                        <Play size={32} className="text-white ml-2" fill="currentColor" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
 /**
  * A triptych video layout with sticky hover-to-play:
  * - Videos play when hovered
@@ -47,112 +167,6 @@ export function VideoTriptych({ leftVideoId, centerVideoId, rightVideoId, classN
         setActiveVideo(videoId);
     };
 
-    // Optimized YouTube embed URL
-    const getEmbedUrl = (videoId: string, autoplay: boolean) => {
-        const params = new URLSearchParams({
-            autoplay: autoplay ? '1' : '0',
-            mute: '0',
-            loop: '1',
-            playlist: videoId,
-            controls: '0',
-            modestbranding: '1',
-            rel: '0',
-            playsinline: '1',
-            enablejsapi: '1',
-            iv_load_policy: '3',
-            fs: '0',
-            disablekb: '1',
-            start: '0',
-        });
-        return `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
-    };
-
-    const VerticalShort = ({ videoId, position }: { videoId: string; position: "left" | "right" }) => {
-        const isActive = activeVideo === videoId && isInView;
-
-        return (
-            <div
-                className="relative aspect-[9/16] bg-midnight border border-steel/30 overflow-hidden group cursor-pointer"
-                onMouseEnter={() => handleHover(videoId)}
-            >
-                {/* Video iframe - always present when active */}
-                {isActive && (
-                    <iframe
-                        src={getEmbedUrl(videoId, true)}
-                        title={`Short ${position}`}
-                        className="absolute inset-0 w-full h-full border-0 z-10"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        loading="eager"
-                    />
-                )}
-
-                {/* Thumbnail overlay - fades when active */}
-                <div className={cn(
-                    "absolute inset-0 transition-opacity duration-700",
-                    isActive ? "opacity-0 pointer-events-none" : "opacity-100"
-                )}>
-                    <img
-                        src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
-                        alt={`Short ${position}`}
-                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
-
-                    {/* Play indicator */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-14 h-14 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform">
-                            <Play size={20} className="text-white ml-1" fill="currentColor" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
-    };
-
-    const RotatedCenter = ({ videoId }: { videoId: string }) => {
-        const isActive = activeVideo === videoId && isInView;
-
-        return (
-            <div
-                className="relative aspect-[16/9] bg-midnight border border-steel/30 overflow-hidden group cursor-pointer"
-                onMouseEnter={() => handleHover(videoId)}
-            >
-                {/* Active rotated iframe */}
-                {isActive && (
-                    <div className="absolute inset-0 overflow-hidden z-10">
-                        <iframe
-                            src={getEmbedUrl(videoId, true)}
-                            title="Featured Reel"
-                            className="absolute top-1/2 left-1/2 h-[180%] border-0 aspect-[9/16] -translate-x-1/2 -translate-y-1/2 -rotate-90"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            loading="eager"
-                        />
-                    </div>
-                )}
-
-                {/* Thumbnail overlay */}
-                <div className={cn(
-                    "absolute inset-0 overflow-hidden transition-opacity duration-700",
-                    isActive ? "opacity-0 pointer-events-none" : "opacity-100"
-                )}>
-                    <img
-                        src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
-                        alt="Center Short"
-                        className="absolute top-1/2 left-1/2 h-[180%] w-auto max-w-none object-cover -translate-x-1/2 -translate-y-1/2 -rotate-90 transition-transform duration-1000 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
-
-                    {/* Play indicator */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-20 h-20 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform shadow-2xl">
-                            <Play size={32} className="text-white ml-2" fill="currentColor" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
-    };
-
     return (
         <div ref={sectionRef} className={cn("relative", className)}>
             {/* Triptych Grid */}
@@ -163,7 +177,12 @@ export function VideoTriptych({ leftVideoId, centerVideoId, rightVideoId, classN
                     {activeVideo === leftVideoId && (
                         <div className="absolute inset-x-0 -inset-y-10 bg-accent/20 blur-[100px] z-0 rounded-full" />
                     )}
-                    <VerticalShort videoId={leftVideoId} position="left" />
+                    <VerticalShort
+                        videoId={leftVideoId}
+                        position="left"
+                        isActive={activeVideo === leftVideoId && isInView}
+                        onHover={handleHover}
+                    />
                 </div>
 
                 {/* Center Rotated */}
@@ -172,7 +191,11 @@ export function VideoTriptych({ leftVideoId, centerVideoId, rightVideoId, classN
                     {activeVideo === centerVideoId && (
                         <div className="absolute inset-x-0 -inset-y-16 bg-primary/20 blur-[120px] z-0 rounded-full" />
                     )}
-                    <RotatedCenter videoId={centerVideoId} />
+                    <RotatedCenter
+                        videoId={centerVideoId}
+                        isActive={activeVideo === centerVideoId && isInView}
+                        onHover={handleHover}
+                    />
                 </div>
 
                 {/* Right Vertical */}
@@ -181,14 +204,29 @@ export function VideoTriptych({ leftVideoId, centerVideoId, rightVideoId, classN
                     {activeVideo === rightVideoId && (
                         <div className="absolute inset-x-0 -inset-y-10 bg-accent/20 blur-[100px] z-0 rounded-full" />
                     )}
-                    <VerticalShort videoId={rightVideoId} position="right" />
+                    <VerticalShort
+                        videoId={rightVideoId}
+                        position="right"
+                        isActive={activeVideo === rightVideoId && isInView}
+                        onHover={handleHover}
+                    />
                 </div>
             </div>
 
             {/* Mobile: Show all three stacked */}
             <div className="grid grid-cols-2 gap-4 mt-4 md:hidden">
-                <VerticalShort videoId={leftVideoId} position="left" />
-                <VerticalShort videoId={rightVideoId} position="right" />
+                <VerticalShort
+                    videoId={leftVideoId}
+                    position="left"
+                    isActive={activeVideo === leftVideoId && isInView}
+                    onHover={handleHover}
+                />
+                <VerticalShort
+                    videoId={rightVideoId}
+                    position="right"
+                    isActive={activeVideo === rightVideoId && isInView}
+                    onHover={handleHover}
+                />
             </div>
 
             {/* Status Indicator */}
@@ -198,7 +236,7 @@ export function VideoTriptych({ leftVideoId, centerVideoId, rightVideoId, classN
                     activeVideo ? "bg-red-500 animate-pulse" : "bg-spruce"
                 )} />
                 <span className="font-mono text-[10px] text-alabaster/50 uppercase tracking-widest">
-                    {activeVideo ? "NOW PLAYING" : "HOVER TO PLAY"} // SOUND ON
+                    {activeVideo ? "NOW PLAYING" : "HOVER TO PLAY" /* SOUND ON */}
                 </span>
             </div>
         </div>

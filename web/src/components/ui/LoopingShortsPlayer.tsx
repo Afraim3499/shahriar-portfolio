@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import YouTube, { YouTubeProps } from "react-youtube";
+import YouTube, { YouTubeProps, YouTubePlayer } from "react-youtube";
 import { cn } from "@/lib/utils";
 
 interface LoopingShortsPlayerProps {
@@ -10,7 +10,7 @@ interface LoopingShortsPlayerProps {
 }
 
 export function LoopingShortsPlayer({ videoIds, className }: LoopingShortsPlayerProps) {
-    const [player, setPlayer] = useState<any>(null);
+    const [player, setPlayer] = useState<YouTubePlayer | null>(null);
     const [currentIndex, setCurrentIndex] = useState(0);
     const containerRef = useRef<HTMLDivElement>(null);
 

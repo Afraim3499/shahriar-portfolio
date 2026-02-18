@@ -4,7 +4,26 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, ArrowRight } from "lucide-react";
 
-const regions = [
+interface RegionCardItem {
+    id: string;
+    content: string;
+}
+
+type RegionItem = string | RegionCardItem;
+
+interface Region {
+    id: string;
+    name: string;
+    title: string;
+    subtitle: string;
+    description: string;
+    highlight?: string;
+    quote?: string;
+    type: "cards" | "gallery" | "grid";
+    items: RegionItem[];
+}
+
+const regions: Region[] = [
     {
         id: "sri-lanka",
         name: "01. Sri Lanka",
@@ -80,7 +99,7 @@ const regions = [
 ];
 
 export function RegionExplorer() {
-    const [activeRegion, setActiveRegion] = useState(regions[0]);
+    const [activeRegion, setActiveRegion] = useState<Region>(regions[0]);
 
     return (
         <section className="relative z-10 py-24 md:py-40">
@@ -154,18 +173,21 @@ export function RegionExplorer() {
                             <div className="relative">
                                 {activeRegion.type === "cards" && (
                                     <div className="grid gap-6">
-                                        {activeRegion.items.map((item: any, idx: number) => (
-                                            <motion.div
-                                                key={idx}
-                                                initial={{ opacity: 0, x: 20 }}
-                                                animate={{ opacity: 1, x: 0 }}
-                                                transition={{ delay: idx * 0.1 }}
-                                                className="p-8 border border-white/5 bg-white/[0.02] rounded-3xl backdrop-blur-xl group hover:border-primary/20 transition-colors duration-500"
-                                            >
-                                                <span className="text-primary font-bold text-2xl block mb-2 opacity-50">{item.id}</span>
-                                                <p className="text-sm text-foreground tracking-widest leading-loose">{item.content}</p>
-                                            </motion.div>
-                                        ))}
+                                        {activeRegion.items.map((item, idx) => {
+                                            const cardItem = item as RegionCardItem;
+                                            return (
+                                                <motion.div
+                                                    key={idx}
+                                                    initial={{ opacity: 0, x: 20 }}
+                                                    animate={{ opacity: 1, x: 0 }}
+                                                    transition={{ delay: idx * 0.1 }}
+                                                    className="p-8 border border-white/5 bg-white/[0.02] rounded-3xl backdrop-blur-xl group hover:border-primary/20 transition-colors duration-500"
+                                                >
+                                                    <span className="text-primary font-bold text-2xl block mb-2 opacity-50">{cardItem.id}</span>
+                                                    <p className="text-sm text-foreground tracking-widest leading-loose">{cardItem.content}</p>
+                                                </motion.div>
+                                            );
+                                        })}
                                     </div>
                                 )}
 
@@ -174,7 +196,7 @@ export function RegionExplorer() {
                                         <div className="absolute -inset-1 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
                                         <div className="mb-10 border-b border-white/5 pb-4 relative" />
                                         <ul className="space-y-6 text-foreground/70 font-medium tracking-tight text-lg relative">
-                                            {activeRegion.items.map((item: any, idx: number) => (
+                                            {activeRegion.items.map((item, idx) => (
                                                 <motion.li
                                                     key={idx}
                                                     initial={{ opacity: 0, x: 20 }}
@@ -183,7 +205,7 @@ export function RegionExplorer() {
                                                     className="flex gap-5 items-start"
                                                 >
                                                     <span className="font-sans text-white/10 text-xl font-bold mt-1">0{idx + 1}</span>
-                                                    <span>{item}</span>
+                                                    <span>{item as string}</span>
                                                 </motion.li>
                                             ))}
                                         </ul>
@@ -193,7 +215,7 @@ export function RegionExplorer() {
                                 {activeRegion.type === "grid" && (
                                     <div className="bg-black/20 p-12 md:p-16 rounded-[2.5rem] border border-white/5">
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 font-sans text-sm text-white/30 tracking-[0.4em]">
-                                            {activeRegion.items.map((item: any, idx: number) => (
+                                            {activeRegion.items.map((item, idx) => (
                                                 <motion.div
                                                     key={idx}
                                                     initial={{ opacity: 0, scale: 0.95 }}
@@ -202,7 +224,7 @@ export function RegionExplorer() {
                                                     className="flex items-center gap-3 group"
                                                 >
                                                     <div className="w-1.5 h-1.5 rounded-full bg-primary/40 group-hover:bg-primary transition-colors duration-300" />
-                                                    <span className="group-hover:text-white transition-colors duration-300 uppercase leading-snug">{item}</span>
+                                                    <span className="group-hover:text-white transition-colors duration-300 uppercase leading-snug">{item as string}</span>
                                                 </motion.div>
                                             ))}
                                         </div>

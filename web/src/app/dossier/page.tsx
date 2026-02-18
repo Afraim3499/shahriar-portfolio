@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { DecisionMarker } from "@/components/ui/DecisionMarker";
 import { HeroBackground } from "@/components/ui/HeroBackground";
 import { Users, Shield, Zap, Check, MapPin, Briefcase, Globe, Award, ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
@@ -173,7 +172,13 @@ function SidebarItem({ label }: { label: string }) {
     );
 }
 
-function FeatureBox({ icon, title, desc }: { icon: any, title: string, desc: string }) {
+interface FeatureBoxProps {
+    icon: React.ReactNode;
+    title: string;
+    desc: string;
+}
+
+function FeatureBox({ icon, title, desc }: FeatureBoxProps) {
     return (
         <div className="p-8 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-xl hover:border-primary/40 transition-all duration-500 hover:scale-[1.02] group relative overflow-hidden">
             <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/5 blur-[30px] opacity-0 group-hover:opacity-100 transition-opacity" />

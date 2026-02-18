@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react";
-import YouTube, { YouTubeProps } from "react-youtube";
+import YouTube, { YouTubeProps, YouTubePlayer } from "react-youtube";
 import { cn } from "@/lib/utils";
 
 interface ShortProps {
@@ -46,7 +46,7 @@ function CinematicShort({
     location,
     mode
 }: ShortProps & { mode: 'mobile' | 'desktop' }) {
-    const [player, setPlayer] = useState<any>(null);
+    const [player, setPlayer] = useState<YouTubePlayer | null>(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
 

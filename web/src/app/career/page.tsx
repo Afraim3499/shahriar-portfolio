@@ -7,7 +7,6 @@ import { ArrowRight, ChevronsDown, Briefcase, Globe, Target } from "lucide-react
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { BlueprintBackground } from "@/components/ui/Blueprint";
-import { motion } from "framer-motion";
 
 const careerGroups = [
     {
@@ -165,7 +164,16 @@ export default function CareerPage() {
     );
 }
 
-function CareerCard({ role, company }: { role: any, company: string }) {
+interface CareerRole {
+    year: string;
+    role: string;
+    location: string;
+    description: string;
+    link?: string;
+    isActive?: boolean;
+}
+
+function CareerCard({ role, company }: { role: CareerRole, company: string }) {
     return (
         <div className={cn(
             "group relative p-10 rounded-3xl border transition-all duration-700 h-full flex flex-col justify-between overflow-hidden",
