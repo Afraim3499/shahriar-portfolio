@@ -60,7 +60,7 @@ export default function TravelsPage() {
                             <div className="h-[1px] w-12 bg-primary/40" />
                         </div>
 
-                        <h1 className="text-7xl md:text-9xl mb-12 tracking-tighter font-bold text-white relative leading-[0.8] font-stint">
+                        <h1 className="text-4xl md:text-5xl lg:text-7xl mb-12 tracking-tighter font-bold text-white relative leading-tight font-stint">
                             Life & Motion<span className="text-primary/80">.</span>
                         </h1>
 

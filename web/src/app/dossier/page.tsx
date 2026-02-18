@@ -20,7 +20,7 @@ export default function AboutPage() {
                                 <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse shadow-[0_0_10px_#10B981]"></span>
                                 <span className="font-mono text-[10px] tracking-[0.4em] text-primary font-bold">Head of Operations</span>
                             </div>
-                            <h1 className="text-5xl md:text-8xl font-bold text-white tracking-tighter font-stint leading-[0.9]">
+                            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white tracking-tighter font-stint leading-tight">
                                 Introduction<span className="text-primary">.</span>
                             </h1>
                         </div>

@@ -114,7 +114,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                         <div className="h-[1px] flex-grow bg-white/5" />
                     </div>
 
-                    <h1 className="text-6xl md:text-8xl font-bold text-white mb-12 leading-[0.85] tracking-tighter font-stint uppercase">
+                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-12 leading-tight tracking-tighter font-stint uppercase">
                         {post.title}
                     </h1>
 

@@ -94,7 +94,7 @@ export default function CareerPage() {
                         <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse shadow-[0_0_10px_#10B981]"></span>
                         <span className="font-mono text-[10px] tracking-[0.4em] text-primary font-bold">Career History</span>
                     </div>
-                    <h1 className="text-6xl md:text-8xl font-bold tracking-tighter text-white leading-[0.85] font-stint">
+                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white leading-tight font-stint">
                         Professional <br /> Experience<span className="text-primary">.</span>
                     </h1>
 

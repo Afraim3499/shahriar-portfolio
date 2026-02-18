@@ -9,7 +9,7 @@ export default function PrivacyPage() {
                 {/* Header */}
                 <div className="mb-16">
                     <DecisionMarker variant="diamond" className="mb-8" />
-                    <h1 className="font-stint text-5xl md:text-7xl text-gradient tracking-tight mb-6">
+                    <h1 className="font-stint text-4xl md:text-5xl lg:text-7xl text-gradient tracking-tight mb-6">
                         Privacy Policy
                     </h1>
                     <p className="font-mono text-[10px] tracking-[0.3em] text-white/40 uppercase">

@@ -34,7 +34,7 @@ export default async function ThinkingPage() {
                     <div className="flex items-center gap-3">
                         <span className="w-8 h-[1px] bg-primary"></span>
                     </div>
-                    <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-white leading-tight font-stint">
+                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-tight font-stint">
                         Insights<span className="text-primary">.</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-foreground/60 max-w-3xl leading-relaxed font-light">
