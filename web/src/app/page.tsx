@@ -172,27 +172,7 @@ export default function Home() {
             {/* Recommendations Section */}
             <Recommendations />
 
-            {/* CTA Section */}
-            <section className="relative overflow-hidden py-24 md:py-32">
-                <div className="absolute inset-0 ambient-combined pointer-events-none" />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none" />
 
-                <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
-                    <h2 className="text-4xl md:text-5xl mb-12 pb-2 text-gradient tracking-tight font-stint text-center">Let&apos;s Build Something Together</h2>
-                    <p className="text-gray-400 mb-12 max-w-2xl mx-auto text-base font-sans">
-                        Whether you&apos;re scaling operations, building distributed teams, or need strategic guidance on AI implementation.
-                    </p>
-                    <Link
-                        href="https://calendar.app.google/EH9rYwo4E5u1HkjR6"
-                        target="_blank"
-                        className="inline-block font-mono text-xs font-bold tracking-widest bg-primary text-white px-10 py-5 hover:bg-primary-dark transition-all hover-glow-emerald"
-                    >
-                        Schedule A Conversation
-                    </Link>
-                </div>
-            </section>
-
-            <DecisionMarker />
         </div>
     );
 }
