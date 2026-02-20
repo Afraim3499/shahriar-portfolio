@@ -21,10 +21,12 @@ export function SchemaData() {
             "description": "Leading team of 55+ in AI Voice Agent operations and process architecture."
         },
         "sameAs": [
-            "https://linkedin.com/in/kabirshahriar",
-            "https://twitter.com/shahriarhisham",
-            "https://youtube.com/@ToWhereNext",
-            "https://instagram.com/hishamshahriar"
+            "https://www.linkedin.com/in/kabirshahriar/",
+            "https://x.com/shahriarhisham/",
+            "https://www.youtube.com/@towherenext",
+            "https://www.instagram.com/hishamshahriar/",
+            "https://www.facebook.com/hishamshahriar24/",
+            "https://www.tiktok.com/@wherenext24"
         ],
         "worksFor": {
             "@type": "Organization",
